@@ -30,8 +30,8 @@ RUN if [ -f install.r ]; then R --quiet -f install.r; fi
 
 USER root
 
-RUN pip3 install git+https://github.com/jupyterhub/nbserverproxy.git
-RUN jupyter serverextension enable --sys-prefix --py nbserverproxy
+#RUN pip3 install git+https://github.com/jupyterhub/nbserverproxy.git
+#RUN jupyter serverextension enable --sys-prefix --py nbserverproxy
 
 RUN pip3 install git+https://github.com/jupyterhub/nbrsessionproxy.git
 RUN jupyter serverextension enable --sys-prefix --py nbrsessionproxy
